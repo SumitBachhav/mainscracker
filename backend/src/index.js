@@ -1,10 +1,9 @@
-require("dotenv").config;
-const sequelize = require("./config/db");
+const { sequelize } = require("./models");
 
 (async () => {
   try {
     await sequelize.authenticate();
-    // await sequelize.sync({alter: true});
+    // await sequelize.sync({ alter: true });
     // console.log("All models were synchronized.");
     console.log("Database connection established successfully.");
   } catch (error) {
