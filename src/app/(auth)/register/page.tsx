@@ -8,8 +8,8 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import Link from 'next/link'
 import { LogoIcon } from '@/components/logo'
-import { useAuthStore } from '@/stores/auth'
 import { GoogleIcon } from '@/components/ui/google-icon'
+import { useAuthStore } from '@/stores/auth'
 
 const schema = z.object({
   email: z.string().email('Enter a valid email'),
